@@ -1,0 +1,125 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: fine_pay
+  examples: |
+    - How can i pay the fine?
+    - steps to pay challan
+    - process to pay fine
+    - process to pay fine of traffic violation
+- intent: live_streaming
+  examples: |
+    - How can i get live streaming of current court cases ?
+    - court cases
+    - current court cases details
+- intent: case_filing
+  examples: |
+    - steps for efiling or epay
+    - efiling or epay
+    - online steps for efiling or epay
+
+- intent: fast_track
+  examples: |
+    - Information about the functioning of Fast Track Special Courts
+    - function of fast track 
+    - fast track special courts
+
+- intent: mobile_app
+  examples: |
+    - Download ecourt mobile app
+    - mobile application 
+    - Steps for download of ecourt mobile app
+
+- intent: law_services
+  examples: |
+    - Help users understand how to avail of Tele Law Services.
+    - information about tele law services 
+    - tele law services

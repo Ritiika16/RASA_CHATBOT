@@ -1,0 +1,134 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fine_pay
+  - live_streaming
+  - case_filing
+  - fast_track
+  - mobile_app
+  - law_services
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "hello"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_fine_pay:
+  - text: |
+        1. Check Challan Status :
+        - Visit [echallan.parivahan.gov.in](https://echallan.parivahan.gov.in) and select “Check Challan Status”.
+        - Enter your Challan Number, Vehicle Number, or DL Number to retrieve any outstanding traffic violations.
+        
+        2. Register and Complete KYC (if required):
+        - If you need to pay through Paytm, register and complete the KYC procedure to access the Paytm platform.
+        
+        3. Proceed with Payment:
+        - Once you’ve checked your challan status, proceed to pay the fine online.
+        - Follow the payment instructions and select your preferred payment method (e.g., Paytm).
+        
+        4. Verify Payment Details:
+        - Review the payment details, including the fine amount and payment method.
+        - Ensure you agree with the details before confirming the payment.
+        
+        5. Confirm Payment:
+        - Complete the payment process and receive a confirmation receipt or SMS.
+        - Keep a record of your payment for future reference.
+
+  utter_live_streaming:
+    - text: |
+          1.Choose a Platform: Select from reputable sources like:
+            -	Court TV (court.tv): Offers live gavel-to-gavel coverage of high-profile cases across the US.
+            -	Courtroom View Network (cvn.com): Provides streaming coverage of major trials, including webinars and attorney interviews.
+          2.Check Availability: 
+          - Verify the court case you’re interested in is being live-streamed by the chosen platform.
+          3.Browser Compatibility: 
+          - Ensure you’re using a compatible browser, such as Google Chrome, for the best user experience.
+          4.Court Permission: 
+          - Note that some courts may require written permission for electronic recording, video, or audio capture. Be aware of any restrictions.
+          5.Access the Stream: 
+          - Click on the courtroom link or platform’s homepage to access the live stream.
+  utter_case_filing:
+    - text: |
+          Step 1: Prepare Your Documents
+          - Ensure all necessary documents are complete, signed, and scanned in PDF format.
+          - Use the Court’s template application form CV-05 (if applicable) and file it in paper format initially.
+          Step 2: Obtain PACER Account (if not already registered)
+          - Create a PACER account to view your case docket sheet and retrieve documents.
+          - If you’re already registered, proceed to Step 3.
+          Step 3: Log In to CM/ECF (Case Management/Electronic Case Files)
+          - Acknowledge your responsibility to redact “personal identifier” information each time you log in.
+          - Use your PACER login credentials to access CM/ECF.
+          Step 4: File Your Documents Electronically
+          - Upload your prepared documents to CM/ECF.
+          - Ensure accurate and complete metadata, including case number, filing party, and document type.
+          Step 5: Make Online Payments (if applicable)
+          - Check if any fees or payments are required for your case.
+          - Use a secure payment portal to make online payments
+  utter_fast_track:
+    - text: |
+          - Fast Track Special Courts (FTSCs) are dedicated courts set up by State Governments in consultation with the concerned High Courts to ensure swift dispensation of justice.
+          - They have a specific jurisdiction, which can limit their ability to deal with related cases.
+          Case Allocation
+          - FTSCs handle cases of heinous crimes, civil cases related to women, children, senior citizens, HIV/AIDS, and other designated categories.
+          - Cases are allocated to FTSCs by the High Court or the State Government.
+          Procedure
+          - The judge will expect cooperation between the parties (plaintiff and defendant) to complete the allocation process.
+          - A listing questionnaire (Form N170) is sent to the parties, which they must return to the court by a specified date, along with the appropriate fee.
+          - A copy of the questionnaire should be sent to the opposing party.
+          - If additional information is required, the court will issue an order (Form N156) specifying what information is needed and the deadline for its submission.
+          Trial and Disposal
+          - FTSCs aim to dispose of cases within a year.
+          - They have a better clearance rate compared to regular courts, with speedy trials being a key feature.
+          Performance
+          - As of May 2024, 866 FTSCs are functional across the country.
+          - While some States have made progress in disposing of cases, others still lag behind the target of completing cases within a year.
+  utter_mobile_app:
+    - text: |
+        - Availability: The eCourts Services mobile application is available on both Google Play Store and Apple App Store.
+        - Search: Search for “eCourts Services” in your respective app store to find the app.
+        Setting Up and Using the App
+        1. Initial Setup: Once downloaded, set up your preferences to tailor the app to your needs. You can choose from various options, including:
+        - Citizen, litigant, attorney, police, government agency, or institutional litigant
+        - Select the services you require, such as Case Status, Cause List, Calendar, and My Cases
+        2. Accessing Services: Use the app to access various services, including:
+        - Case Status: Check the current status of your cases
+        - Cause List: View the scheduled hearings and listings for your cases
+        - Court Orders: Access court orders and judgments related to your cases
+        3. QR Code Feature: The app has been updated with a QR code feature. You can obtain a QR code from the eCourts website or the mobile app itself. Scan the QR code to retrieve case details directly on your mobile phone.
+        4. Updates: The app has received updates, including the QR code feature, demonstrating its ongoing development and improvement.
+  utter_law_services:
+    - text: |
+          1. Identify Your Eligibility: Determine if you are eligible for free legal aid under Section 12 of the Legal Services Authorities Act, 1987 (e.g., marginalized communities like SC/ST/OBC, persons with disabilities).
+          2. Choose Your Registration Option: Select whether you’re registering as a lawyer or applicant. If an applicant, you’ll need to provide necessary documents and information.
+          3. Find a Common Service Centre (CSC): Locate an authorized CSC near you, where Tele-Law services are available.
+          4. Schedule an Online Appointment: Register and book an online appointment to connect with a Panel Lawyer via video conferencing, chat, or telephone available at the CSC.
+          5. Meet with a Para Legal Volunteer (PLV): A trained PLV will assist you in understanding legal issues and advice given by lawyers. They’ll help you prepare for your online consultation.
+          6. Connect with a Panel Lawyer: Participate in your scheduled online consultation with a Panel Lawyer, who will provide legal advice and guidance.
+          7. Pay a Nominal Fee (if applicable): If you’re not eligible for free legal aid, you’ll be charged a nominal fee of ₹30 per consultation.
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

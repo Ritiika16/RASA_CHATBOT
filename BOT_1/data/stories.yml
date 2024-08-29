@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: User wants to pay fine
+  steps:
+  - intent: fine_pay
+  - action: utter_fine_pay
+
+- story: User want to find live streaming of court cases
+  steps:
+  - intent: live_streaming
+  - action: utter_live_streaming
+
+- story: User want to get steps for efiling or epay
+  steps:
+  - intent: case_filing
+  - action: utter_case_filing
+
+- story: Information about the functioning of Fast Track Special Courts
+  steps:
+  - intent: fast_track
+  - action: utter_fast_track
+
+- story: Download ecourt mobile app
+  steps:
+  - intent: mobile_app
+  - action: utter_mobile_app
+
+- story: Help users understand how to avail of Tele Law Services.
+  steps:
+  - intent: law_services
+  - action: utter_law_services

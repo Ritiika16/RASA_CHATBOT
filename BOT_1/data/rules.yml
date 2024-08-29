@@ -1,0 +1,42 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: Respond to fine pay
+  steps:
+  - intent: fine_pay
+  - action: utter_fine_pay
+- rule : Respond to live streaming of court cases
+  steps:
+  - intent: live_streaming
+  - action: utter_live_streaming
+
+- rule : Respond to efiling and epay procedure
+  steps:
+    - intent : case_filing
+    - action : utter_case_filing
+
+- rule : Information about the functioning of Fast Track Special Courts
+  steps:
+    - intent : fast_track
+    - action : utter_fast_track
+
+- rule : Download ecourt mobile app
+  steps:
+    - intent : mobile_app
+    - action : utter_mobile_app
+
+- rule : Help users understand how to avail of Tele Law Services.
+  steps:
+    - intent : law_services
+    - action : utter_law_services
